@@ -1,0 +1,10 @@
+package: kcountry
+version: '2.0'
+author: Kreatif GmbH
+debug_email: dev@kreatif.it
+compile: 0
+
+requires:
+    redaxo: '>=5.15.1'
+    packages:
+        ktablemanager: '>=0.0.1'
