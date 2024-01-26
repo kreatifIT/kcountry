@@ -41,4 +41,13 @@ class Country extends Model
     {
         return $this->getValue('iso3');
     }
+
+    /**
+     * @param string $iso2
+     * @return self|null
+     */
+    public static function getByIso2(string $iso2): ?self
+    {
+        return self::getQuery()->where('iso2', $iso2)->findOne();
+    }
 }
